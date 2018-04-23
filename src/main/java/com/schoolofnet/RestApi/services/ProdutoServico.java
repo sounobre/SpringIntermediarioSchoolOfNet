@@ -5,10 +5,20 @@
  */
 package com.schoolofnet.RestApi.services;
 
+import com.schoolofnet.RestApi.models.Produto;
+import java.util.List;
+
 /**
  *
  * @author souno
  */
 public interface ProdutoServico {
+    
+    public List<Produto> findAll();
+    public Produto find(Long id);
+    public Produto create(Produto produto);
+    public Produto update();
+    public void delete();
+    
     
 }
