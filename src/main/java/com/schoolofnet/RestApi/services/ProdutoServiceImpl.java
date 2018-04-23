@@ -32,7 +32,7 @@ public class ProdutoServiceImpl implements ProdutoServico{
 
     @Override
     public Produto find(Long id) {
-        return this.produtoRepository.findOneById(id);
+        return this.produtoRepository.findOne(id);
      //   return null;
     }
 
